@@ -311,3 +311,72 @@ header.masthead p {
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
+
+/* VENUE */
+
+#venue {
+    position: relative;
+}
+
+.venue-address {
+    min-height: 300px;
+    background: rgba(52, 152, 219, 0.85) none repeat scroll 0 0;
+}
+
+.venue-address .address {
+    padding-left: 30px;
+    position: relative;
+}
+
+.venue-address .address .fa {
+    position: absolute;
+    left: 0;
+}
+
+#map-canvas {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    top: 0;
+    z-index: -1;
+}
+
+@media all and (min-width:900px) {
+
+    .venue {
+        margin-top: 60px;
+    }
+
+    #map-canvas {
+        width: 100%;
+        min-height: 430px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+
+}
+.speakers h2 {
+    text-transform: uppercase;
+}
+
+.speakers img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.speakers img.photo {
+    float: left;
+    padding-right: 15px;
+}
+.talks h3 {
+    padding: 0;
+    min-height: 0;
+}
+.talks h4 {
+    padding: 0;
+    min-height: 1em;
+    font-size: 1em;
+    margin:0;
+}
+/* Fim Customização */

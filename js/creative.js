@@ -73,3 +73,22 @@
   });
 
 })(jQuery); // End of use strict
+
+
+//GOOGLE MAP
+function init_map() {
+    var myOptions = {
+        zoom: 18,
+        center: new google.maps.LatLng(-23.16285976, -45.89501446), // Coordenadas do Colégio Crescer
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false,
+        styles: [{featureType:'all',stylers:[{saturation:-100},{gamma:0.90}]}]
+    };
+    map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+    marker = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(-23.16285976, -45.89501446) // Coordenadas do colégio crescer
+    });
+
+}
+google.maps.event.addDomListener(window, 'load', init_map);
