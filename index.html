@@ -48,17 +48,18 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top"> 
+    <div id="app">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #F0FF00;">
       <div class="container">
           <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <font color='#0B6EF7'>Colégio Crescer 
                 <br>
-                <font size="1" >do infantil ao 9º ano do fundamental</font>
+                <font size="1" >{{ series.titulo }}</font>
                 <font size="2" > 
-                  <a href="https://api.whatsapp.com/send?phone=5512997487141"> <i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i></a>
-                  (12) 99748-7141 - (12) 3302-7141</font>
+                  <a href="whatsapp.link"> <i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i></a>
+                  {{ whatsapp.titulo}} - {{ telefone.titulo}}</font>
               </font>
             </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,29 +137,27 @@
           <div class="col-lg-4 col-md-4 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-eye text-primary mb-3 sr-icons" ></i>
-              <h3 class="mb-3">Visão</h3>
+              <h3 class="mb-3">{{ visao.titulo }}</h3>
               <p class="text-faded mb-5">
-                Os nossos pais e alunos estão no centro de tudo que fazemos.
-                Ouvimos com atenção as suas necessidades e expectativas, cada gesto é importante, Educação de Qualidade é compromisso fundamental, jamais questionados.</p>
+                {{ visao.texto }}
+              </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-diamond text-primary  mb-3 sr-icons"></i>
-              <h3 class="mb-3">Valores</h3>
+              <h3 class="mb-3">{{ valores.titulo }}</h3>
               <p class="text-faded mb-5">
-                Cooperatividade, Respeito, Sinceridade, Honestidade, Amizade, Gratidão e Amor.
+                {{ valores.texto }}
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Missão</h3>
+              <h3 class="mb-3">{{ missao.titulo }}</h3>
               <p class="text-faded mb-5">
-                Nossa escola tem por missão contribuir para a constante melhoria das condições educacionais da sociedade, visando assegurar uma educação de qualidade
-                aos nossos alunos, em ambiente de responsabilidade social. Somos uma escola que tem grande orgulho e compromisso pelo trabalho que desenvolvemos, e cujo
-                objetivo principal é oferecer um ensino de qualidade, para que o aluno tenha uma atuação crítica e participativa na sociedade, motivado pelos mais altos ideais de altruísmo e solidariedade ao próximo.
+                {{ missao.texto }}
               </p>
             </div>
           </div>
@@ -170,7 +169,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Disciplinas</h2>
+            <h2 class="section-heading">{{ disciplinas.titulo }}</h2>
             <!-- <hr class="my-4"> -->
           </div>
         </div>
@@ -179,45 +178,32 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 text-left">
             <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">Educação Infantil e 1º ano</h6>
+              <h6 class="mb-3">{{ infantil.titulo }}</h6>
               <ul>
-                <li>Linguagem Oral e Escrita</li>
-                <li>Matemática</li>
-                <li>Natureza e Sociedade</li>
+                <li v-for="materia in infantil.texto.split(',')" >
+                  {{ materia }}
+                </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 text-left">
             <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">Ensino Fundamental 2º ao 5º ano</h6>
+              <h6 class="mb-3">{{ fundamental.titulo }}</h6>
               <ul>
-                <li>Língua Portuguesa</li>
-                <li>Arte</li>
-                <li>Educação Física</li>
-                <li>Matemática</li>
-                <li>Ciências Físicas e Biológicas</li>
-                <li>História</li>
-                <li>Geografia</li>
-                <li>Língua Inglesa</li>
+                <li v-for="materia in fundamental.texto.split(',')" >
+                  {{ materia }}
+                </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 text-left">
             <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">Ensino Fundamental 6º ao 9º ano</h6>
+              <h6 class="mb-3">{{ fundamentalDois.titulo }}</h6>
               <ul>
-                <li>Língua Portuguesa</li>
-                <li>Arte</li>
-                <li>Educação Física</li>
-                <li>Matemática</li>
-                <li>Ciências Físicas e Biológicas</li>
-                <li>História</li>
-                <li>Geografia</li>
-                <li>Língua Inglesa</li>
-                <li>Técnica de Redação</li>
-                <li>Geometria</li>
-                <li>Empreendedorismo</li>
-                <li>Matemática Financeira</li>
+                <li v-for="materia in fundamentalDois.texto.split(',')" >
+                  {{ materia }}
+                </li>
+              </ul>
               </ul>
             </div>
           </div>
@@ -532,10 +518,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
+          <div v-if="whatsapp.link" class="col-lg-4 ml-auto text-center">
             <p>
               <i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i>
-               <a href="https://api.whatsapp.com/send?phone=5512997487141">(12) 99748-7141</a>
+               <a href="whatsapp.link">{{ whatsapp.titulo}}</a>
              </p>
             <p>(12) 3302-7141</p>
           </div>
@@ -568,7 +554,7 @@
           </div>
       </div>
     </section>
-
+  </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -579,6 +565,75 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+        <!-- VUE.JS -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script type="text/javascript">
+          var app = new Vue({
+            el: "#app",
+            async mounted() {
+              this.elements = await fetch("http://localhost:3000/posts/").then(
+                function (response) {
+                  return response.json();
+                }
+              );
+              this.whatsapp = this.elements.filter(function (elements) {
+                return elements.secao == "whatsapp";
+              })[0];
+              this.facebook = this.elements.filter(function (elements) {
+                return elements.secao == "facebook";
+              })[0];
+              this.telefone = this.elements.filter(function (elements) {
+                return elements.secao == "telefone";
+              })[0];
+              this.series = this.elements.filter(function (elements) {
+                return elements.secao == "series";
+              })[0];
+              this.primeiraSecao = this.elements.filter(function (elements) {
+                return elements.secao == "primeira";
+              })[0];
+              this.visao = this.elements.filter(function (elements) {
+                return elements.secao == "visao";
+              })[0];
+              this.valores = this.elements.filter(function (elements) {
+                return elements.secao == "valores";
+              })[0];
+              this.missao = this.elements.filter(function (elements) {
+                return elements.secao == "missao";
+              })[0];
+              this.disciplinas = this.elements.filter(function (elements) {
+                return elements.secao == "disciplinas";
+              })[0];
+              this.infantil = this.elements.filter(function (elements) {
+                return elements.secao == "infantil";
+              })[0];
+              this.fundamental = this.elements.filter(function (elements) {
+                return elements.secao == "fundamental";
+              })[0];
+              this.fundamentalDois = this.elements.filter(function (elements) {
+                return elements.secao == "fundamental_dois";
+              })[0];
+            },
+            data() {
+              return {
+                elements: [],
+                whatsapp: {},
+                facebook: {},
+                telefone: {},
+                series: {},
+                primeiraSecao: {},
+                visao: {},
+                valores: {},
+                missao: {},
+                disciplinas: {},
+                infantil: {},
+                fundamental: {},
+                fundamentalDois: {},
+              };
+            },
+          });
+        </script>
+     
   </body>
 
 </html>

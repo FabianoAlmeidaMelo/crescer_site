@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {"id": 2,"secao":"facebook", "titulo": null, "texto": null, "foto": null, "link": null},
+    {"id": 3,"secao":"whatsapp", "titulo": "(12) 99748-7141", "texto": null, "foto": null, "link": "https://api.whatsapp.com/send?phone=5512997487141"},
+    {"id": 4,"secao":"telefone", "titulo": "(12) 3302-7141", "texto": null, "foto": null, "link": null},
+    {"id": 7,"secao":"series", "titulo": "do infantil ao 9º ano do fundamental", "texto": null, "foto": null, "link": null},
+    {"id": 8,"secao":"primeira", "titulo" : "Educar para Transformar. Aprender para Crescer", "texto": null, "foto": null, "link": null},
+    {"id": 9,"secao":"visao", "titulo" : "Visão", "texto": "Os nossos pais e alunos estão no centro de tudo que fazemos. Ouvimos com atenção as suas necessidades e expectativas, cada gesto é importante, Educação de Qualidade é compromisso fundamental, jamais questionados.",  "foto": null, "link": null},
+    {"id": 10,"secao":"valores", "titulo" : "Valores", "texto": "Cooperatividade, Respeito, Sinceridade, Honestidade, Amizade, Gratidão e Amor.",  "foto": "img/bg-showcase-3.jpg", "link": null},
+    {"id": 11,"secao":"missao", "titulo" : "Missão", "texto": "Nossa escola tem por missão contribuir para a constante melhoria das condições educacionais da sociedade, visando assegurar uma educação de qualidade aos nossos alunos, em ambiente de responsabilidade social. Somos uma escola que tem grande orgulho e compromisso pelo trabalho que desenvolvemos, e cujo objetivo principal é oferecer um ensino de qualidade, para que o aluno tenha uma atuação crítica e participativa na sociedade, motivado pelos mais altos ideais de altruísmo e solidariedade ao próximo.",  "foto": null, "link": null},
+    {"id": 12,"secao":"disciplinas", "titulo" : "Disciplinas", "texto": null,  "foto": null, "link": null},
+    {"id": 13,"secao":"infantil", "titulo" : "Educação Infantil e 1º ano", "texto": "Linguagem Oral e Escrita, Matemática, Natureza e Sociedade",  "foto": null, "link": null},
+    {"id": 14,"secao":"fundamental", "titulo" : "Ensino Fundamental 2º ao 5º ano", "texto": "Língua Portuguesa, Arte, Educação Física, Matemática, Ciências Físicas e Biológicas, História, Geografia, Língua Inglesa",  "foto": null, "link": null},
+    {"id": 15,"secao":"fundamental_dois", "titulo" : "Ensino Fundamental 6º ao 9º ano", "texto": "Língua Portuguesa, Arte, Educação Física, Matemática, Ciências Físicas e Biológicas, História, Geografia, Língua Inglesa, Técnica de Redação, Geometria, Empreendedorismo, Matemática Financeira",  "foto": null, "link": null},
+    {"id": 16,"secao":"galeria_tres", "titulo" : "Sarah W.", "texto": "Não fico sem! Pelo menos uma vez por semana tenho que praticar",  "foto": "img/testimonials-3.jpg", "link": null},
+    {"id": 17,"secao":"galeria2", "titulo" : "Nossos Parceiros", "texto": "Parceria de sucesso, unindo forças pela sua saúde e bem estar",  "foto": null, "link": null}
+  ]
+}
