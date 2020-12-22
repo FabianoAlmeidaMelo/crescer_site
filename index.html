@@ -76,13 +76,13 @@
                  aria-expanded="false"><font color='#0B6EF7'>Escola</font>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#about">Metodologia</a>
+                <a class="dropdown-item" href="#about">{{ metodologia.titulo }}</a>
                 <!-- <a class="dropdown-item" href="#equipe">Equipe</a> -->
-                <a class="dropdown-item" href="#disciplinas">Disciplinas</a>
+                <a class="dropdown-item" href="#disciplinas">{{ disciplinas.titulo }}</a>
                 <a class="dropdown-item" href="#horarios">Horários</a>
-                <a class="dropdown-item" href="#projetos">Atividades Extra Curriculares</a>
-                <a class="dropdown-item" href="#recursos">Recursos</a>
-                <a class="dropdown-item" href="#lazer">Área de Lazer</a>
+                <a class="dropdown-item" href="#projetos">{{ atividades.titulo }}</a>
+                <a class="dropdown-item" href="#recursos">{{ recursos.titulo }}</a>
+                <a class="dropdown-item" href="#lazer">{{ areaLazer.titulo }}</a>
               </div>
             </li>
 <!--             <li class="nav-item">
@@ -215,7 +215,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Atividades Extra Curriculares</h2>
+            <h2 class="section-heading">{{ atividades.titulo }}</h2>
             <!-- <hr class="my-4"> -->
           </div>
         </div>
@@ -224,33 +224,31 @@
         <div class="row">
           <div class="col-lg-4 col-md-4 text-left">
             <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">Arte e Atividade Física</h6>
+              <h6 class="mb-3">{{ atividadesUm.titulo }}</h6>
               <ul>
-                <li>Capoeira</li>
-                <li>Escolinha de Futebol do Colégio Crescer</li>
-                <li>Expressão Musical</li>
-                <li>Expressão Corporal</li>
+                <li v-for="atividade in atividadesUm.texto.split(',')" >
+                  {{ atividade }}
+                </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 text-left">
             <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">Atividades Diversificadas</h6>
+              <h6 class="mb-3">{{ atividadesDois.titulo }}</h6>
               <ul>
-                <li>Projetos Semestrais</li>
-                <li>Robótica</li>
-                <li>Empreendedorismo</li>
-                <li>Educação Financeira</li>
-                <li>Biblioteca Digital</li>
+                <li v-for="atividade in atividadesDois.texto.split(',')" >
+                  {{ atividade }}
+                </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 text-left">
             <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">Idiomas</h6>
+              <h6 class="mb-3">{{ atividadesTres.titulo }}</h6>
               <ul>
-                <li>Inglês</li>
-                <li>Espanhol</li>
+                <li v-for="atividade in atividadesTres.texto.split(',')" >
+                  {{ atividade }}
+                </li>
               </ul>
             </div>
           </div>
@@ -262,7 +260,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Área de Lazer</h2>
+            <h2 class="section-heading">{{ areaLazer.titulo }}</h2>
             <hr class="my-4">
           </div>
         </div>
@@ -273,11 +271,9 @@
               <div class="service-box mt-5 mx-auto">
                 <h6 class="mb-3"></h6>
                   <ul>
-                    <li>Playground</li>
-                    <li>Mesa de Pebolim</li>
-                    <li>Jogos recreativos</li>
-                    <li>Tênis de Mesa</li>
-                    <li>Quadra Poliesportiva</li>
+                    <li v-for="area in areaLazer.texto.split(',')" >
+                      {{ area }}
+                    </li>
                   </ul>
               </div>
             </div>
@@ -290,7 +286,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Recursos</h2>
+            <h2 class="section-heading">{{ recursos.titulo }}</h2>
             <hr class="my-4">
           </div>
         </div>
@@ -301,15 +297,9 @@
               <div class="service-box mt-5 mx-auto">
                 <h6 class="mb-3"></h6>
                   <ul>
-                    <li>Tablets</li>
-                    <li>Datashow</li>
-                    <li>Lousa Digital</li>
-                    <li>Lousa Convencional</li>
-                    <li>Laboratório de Ciências</li>
-                    <li>Monitoramento por Câmeras de Segurança</li>
-                    <li>Salas Climatizadas</li>
-                    <li>Cantina</li>
-                    <li>Wifi</li>
+                    <li v-for="recurso in recursos.texto.split(',')" >
+                      {{ recurso }}
+                    </li>
                   </ul>
               </div>
             </div>
@@ -399,17 +389,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto text-center">
-            <h4 class="section-heading text-white">Metodologia</h4>
-            <p class="text-faded mb-2" style="text-align: justify">A metodologia de ensino do Colégio está baseada na proposta construtiva, ou seja, o objetivo é levar a criança a explorar e descobrir todas as possibilidades do seu corpo, dos objetivos, das relações, do espaço e através disso, desenvolver a sua capacidade de observar, descobrir e pensar. Considerando os ideais de Lev Vygotsky e Jean Piaget, a proposta tem o propósito de colocar em evidência o sentido e significado da relação sujeito / meio ambiente no processo de construção do conhecimento. A abordagem sócio – interacionista concebe a aprendizagem como um fenômeno que se realiza a interação com o outro. A aprendizagem acontece por meio da internalização, a partir de um processo, de troca, que possui uma dimensão coletiva. No planejamento e na execução de cada atividade, são levados em conta o nível de conhecimento dos alunos, o seu ritmo de aprendizagem e os tipos de motivação que os inspiram. Esse procedimento visa a respeitar as diferenças individuais e as características mais importantes da criança na realização de cada uma das atividades</p>
+            <h4 class="section-heading text-white">{{ metodologia.titulo }}</h4>
             <p class="text-faded mb-2" style="text-align: justify">
-            A proposta é colocada em ação por meio de um sistema apostilado da Editora Opet que enfatiza o construtivismo, que está coerente com a Matriz Curricular vigente: com as seguintes disciplinas para o Ensino Fundamental: Língua Portuguesa, Arte, Matemática, Ciências da Natureza, História, Geografia, para o Ensino Fundamental e para Educação Infantil introduzimos a Formação Pessoal e Conhecimento de Mundo através da Linguagem Oral e escrita, Natureza e Sociedade e Matemática como parte diversificada inserimos o Inglês, a Capoeira e a Aula de Música. Dentro do contexto educacional das disciplinas, introduziu-se também dois projetos semestrais escolhidos de acordo com a realidade e a necessidade atual.</p>
+              {{ metodologia.texto }}
+            </p>
+            <p class="text-faded mb-2" style="text-align: justify">
+              {{ metodologiaP2.texto }}
+            </p>
             <a class="btn btn-light btn-xl js-scroll-trigger" href="#page-top">Voltar para o topo</a>
           </div>
         </div>
       </div>
     </section>
-
-
 
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
@@ -613,6 +604,30 @@
               this.fundamentalDois = this.elements.filter(function (elements) {
                 return elements.secao == "fundamental_dois";
               })[0];
+              this.atividades = this.elements.filter(function (elements) {
+                return elements.secao == "atividades";
+              })[0];
+              this.atividadesUm = this.elements.filter(function (elements) {
+                return elements.secao == "atividadesUm";
+              })[0];
+              this.atividadesDois = this.elements.filter(function (elements) {
+                return elements.secao == "atividadesDois";
+              })[0];
+              this.atividadesTres = this.elements.filter(function (elements) {
+                return elements.secao == "atividadesTres";
+              })[0];
+              this.areaLazer = this.elements.filter(function (elements) {
+                return elements.secao == "areaLazer";
+              })[0];
+              this.recursos = this.elements.filter(function (elements) {
+                return elements.secao == "recursos";
+              })[0];
+              this.metodologia = this.elements.filter(function (elements) {
+                return elements.secao == "metodologiaP1";
+              })[0];
+              this.metodologiaP2 = this.elements.filter(function (elements) {
+                return elements.secao == "metodologiaP2";
+              })[0];
             },
             data() {
               return {
@@ -629,6 +644,14 @@
                 infantil: {},
                 fundamental: {},
                 fundamentalDois: {},
+                atividades: {},
+                atividadesUm: {},
+                atividadesDois: {},
+                atividadesTres: {},
+                areaLazer: {},
+                recursos: {},
+                metodologia: {},
+                metodologiaP2: {},
               };
             },
           });
