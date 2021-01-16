@@ -555,18 +555,18 @@
     <script src="js/creative.min.js"></script>
 
         <!-- VUE.JS -->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script type="text/javascript">
           var app = new Vue({
             el: "#app",
             async mounted() {
-              this.elements = await fetch("http://localhost:3000/posts/").then(
+              this.elements = await fetch("https://smartiscool.online/sites/api/conteudo/1/").then(
                 function (response) {
                   return response.json();
                 }
               );
               this.whatsapp = this.elements.filter(function (elements) {
-                return elements.chave == "whatsapp";
+                  return elements.chave == "whatsapp";
               })[0];
               this.facebook = this.elements.filter(function (elements) {
                 return elements.chave == "facebook";

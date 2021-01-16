@@ -11,7 +11,7 @@
     {"id": 13,"chave":"infantil", "titulo" : "Educação Infantil e 1º ano", "texto": "Linguagem Oral e Escrita, Matemática, Natureza e Sociedade",  "foto": null, "link": null},
     {"id": 14,"chave":"fundamental", "titulo" : "Ensino Fundamental 2º ao 5º ano", "texto": "Língua Portuguesa, Arte, Educação Física, Matemática, Ciências Físicas e Biológicas, História, Geografia, Língua Inglesa",  "foto": null, "link": null},
     {"id": 15,"chave":"fundamental_dois", "titulo" : "Ensino Fundamental 6º ao 9º ano", "texto": "Língua Portuguesa, Arte, Educação Física, Matemática, Ciências Físicas e Biológicas, História, Geografia, Língua Inglesa, Técnica de Redação, Geometria, Empreendedorismo, Matemática Financeira",  "foto": null, "link": null},
-    {"id": 16,"chave":"atividades", "titulo" : "Atividades Extra Curriculares", "texto": "Não fico sem! Pelo menos uma vez por semana tenho que praticar",  "foto": null, "link": null},
+    {"id": 16,"chave":"atividades", "titulo" : "Atividades Extra Curriculares", "texto": null,  "foto": null, "link": null},
     {"id": 17,"chave":"atividadesUm", "titulo" : "Arte e Atividade Física", "texto": "Capoeira, Escolinha de Futebol do Colégio Crescer, Expressão Musical, Expressão Corporal",  "foto": null, "link": null},
     {"id": 18,"chave":"atividadesDois", "titulo" : "Atividades Diversificadas", "texto": "Projetos Semestrais, Robótica, Empreendedorismo, Educação Financeira, Biblioteca Digital",  "foto": null, "link": null},
     {"id": 19,"chave":"atividadesTres", "titulo" : "Idiomas", "texto":"Inglês, Espanhol",  "foto": null, "link": null},
