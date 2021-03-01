@@ -49,314 +49,314 @@
   </head>
 
   <body id="page-top"> 
-    <div id="app">
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #F0FF00;">
-      <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <font color='#0B6EF7'>Colégio Crescer 
-                <br>
-                <font size="1" >{{ series.titulo }}</font>
-                <font size="2" > 
-                  <a v-bind:href="whatsapp.link"> {{ whatsapp.titulo}} <i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i></a>
-                   {{ telefone.titulo}}</font>
-              </font>
-            </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
-                 href="http://example.com"
-                 id="navbarDropdownMenuLink"
-                 data-toggle="dropdown"
-                 aria-haspopup="true"
-                 aria-expanded="false"><font color='#0B6EF7'>Escola</font>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #F0FF00;">
+        <div id='navMenu' class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+              <font color='#0B6EF7'>Colégio Crescer 
+                  <br>
+                  <font size="1" >{{ series.titulo }}</font>
+                  <font size="2" > 
+                    <a v-bind:href="whatsapp.link"> {{ whatsapp.titulo}} <i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i></a>
+                    {{ telefone.titulo}}</font>
+                </font>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#about">{{ metodologia.titulo }}</a>
-                <!-- <a class="dropdown-item" href="#equipe">Equipe</a> -->
-                <a class="dropdown-item" href="#disciplinas">{{ disciplinas.titulo }}</a>
-                <a class="dropdown-item" href="#horarios">Horários</a>
-                <a class="dropdown-item" href="#projetos">{{ atividades.titulo }}</a>
-                <a class="dropdown-item" href="#recursos">{{ recursos.titulo }}</a>
-                <a class="dropdown-item" href="#lazer">{{ areaLazer.titulo }}</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#values"><font color='#0B6EF7'>{{ valores.titulo }}</font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio"><font color='#0B6EF7'>{{ galeria.titulo }}</font></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact"><font color='#0B6EF7'>{{ contatos.titulo }}</font></a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#venue"><font color='#0B6EF7'>Local</font></a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="https://smartiscool.online/login/?slug=crescer_sjc" >
-                <font color='#0B6EF7'>
-                  <i class="fa fa-sign-in fa-2x "> </i>
-                </font></a>
-            </li>
-          </ul>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"
+                  href="http://example.com"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"><font color='#0B6EF7'>Escola</font>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#about">{{ metodologia.titulo }}</a>
+                  <!-- <a class="dropdown-item" href="#equipe">Equipe</a> -->
+                  <a class="dropdown-item" href="#disciplinas">{{ disciplinas.titulo }}</a>
+                  <a class="dropdown-item" href="#horarios">Horários</a>
+                  <a class="dropdown-item" href="#projetos">{{ atividades.titulo }}</a>
+                  <a class="dropdown-item" href="#recursos">{{ recursos.titulo }}</a>
+                  <a class="dropdown-item" href="#lazer">{{ areaLazer.titulo }}</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#values"><font color='#0B6EF7'>{{ valores.titulo }}</font></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio"><font color='#0B6EF7'>{{ galeria.titulo }}</font></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact"><font color='#0B6EF7'>{{ contatos.titulo }}</font></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#venue"><font color='#0B6EF7'>Local</font></a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="https://smartiscool.online/login/?slug=crescer_sjc" >
+                  <font color='#0B6EF7'>
+                    <i class="fa fa-sign-in fa-2x "> </i>
+                  </font></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    <div id="app">
+      <header class="masthead  text-white d-flex">
+        <div class="container my-auto ">
+          <div id='cabecalho'>
+          <!--  <p><i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i> (12) 98813-6417 <br>(12) 3302-7141</p> -->
+              <h3 class="text-uppercase " >
+                <!-- <strong><font color='#0B6EF7'>Seja bem vindo ao Colégio Crescer</font></strong> -->
+              </h3>
+          </div>
+        </div>
+      </header>
 
-    <header class="masthead  text-white d-flex">
-      <div class="container my-auto ">
-        <div id='cabecalho'>
-         <!--  <p><i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i> (12) 98813-6417 <br>(12) 3302-7141</p> -->
-            <h3 class="text-uppercase " >
-               <!-- <strong><font color='#0B6EF7'>Seja bem vindo ao Colégio Crescer</font></strong> -->
-            </h3>
-        </div>
-      </div>
-    </header>
-
-
-    <section style="background-color:#0B6EF7" id="values">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading  text-faded mb-5">Educar para Transformar. Aprender para Crescer</h2>
-            <!-- <hr class="my-4"> -->
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-eye text-primary mb-3 sr-icons" ></i>
-              <h3 class="mb-3">{{ visao.titulo }}</h3>
-              <p class="text-faded mb-5">
-                {{ visao.texto }}
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary  mb-3 sr-icons"></i>
-              <h3 class="mb-3">{{ valores.titulo }}</h3>
-              <p class="text-faded mb-5">
-                {{ valores.texto }}
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">{{ missao.titulo }}</h3>
-              <p class="text-faded mb-5">
-                {{ missao.texto }}
-              </p>
+    
+      <section style="background-color:#0B6EF7" id="values">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading  text-faded mb-5">Educar para Transformar. Aprender para Crescer</h2>
+              <!-- <hr class="my-4"> -->
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="disciplinas">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">{{ disciplinas.titulo }}</h2>
-            <!-- <hr class="my-4"> -->
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 text-left">
-            <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">{{ infantil.titulo }}</h6>
-              <ul>
-                <li v-for="materia in infantil.texto.split(',')" >
-                  {{ materia }}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 text-left">
-            <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">{{ fundamental.titulo }}</h6>
-              <ul>
-                <li v-for="materia in fundamental.texto.split(',')" >
-                  {{ materia }}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 text-left">
-            <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">{{ fundamentalDois.titulo }}</h6>
-              <ul>
-                <li v-for="materia in fundamentalDois.texto.split(',')" >
-                  {{ materia }}
-                </li>
-              </ul>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projetos">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">{{ atividades.titulo }}</h2>
-            <!-- <hr class="my-4"> -->
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 text-left">
-            <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">{{ atividadesUm.titulo }}</h6>
-              <ul>
-                <li v-for="atividade in atividadesUm.texto.split(',')" >
-                  {{ atividade }}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 text-left">
-            <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">{{ atividadesDois.titulo }}</h6>
-              <ul>
-                <li v-for="atividade in atividadesDois.texto.split(',')" >
-                  {{ atividade }}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 text-left">
-            <div class="service-box mt-5 mx-auto">
-              <h6 class="mb-3">{{ atividadesTres.titulo }}</h6>
-              <ul>
-                <li v-for="atividade in atividadesTres.texto.split(',')" >
-                  {{ atividade }}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="lazer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">{{ areaLazer.titulo }}</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-
-        <div class="row ">
-          <div class="col-lg-12 mx-auto text-center">
-            <div class="col-lg-12 col-md-4 text-left">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 text-center">
               <div class="service-box mt-5 mx-auto">
-                <h6 class="mb-3"></h6>
-                  <ul>
-                    <li v-for="area in areaLazer.texto.split(',')" >
-                      {{ area }}
-                    </li>
-                  </ul>
+                <i class="fa fa-4x fa-eye text-primary mb-3 sr-icons" ></i>
+                <h3 class="mb-3">{{ visao.titulo }}</h3>
+                <p class="text-faded mb-5">
+                  {{ visao.texto }}
+                </p>
               </div>
             </div>
-          </div>
-         </div>
-        </div>
-    </section>
-
-    <section id="recursos">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">{{ recursos.titulo }}</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-
-        <div class="row ">
-          <div class="col-lg-12 mx-auto text-center">
-            <div class="col-lg-12 col-md-4 text-left">
+            <div class="col-lg-4 col-md-4 text-center">
               <div class="service-box mt-5 mx-auto">
-                <h6 class="mb-3"></h6>
-                  <ul>
-                    <li v-for="recurso in recursos.texto.split(',')" >
-                      {{ recurso }}
-                    </li>
-                  </ul>
+                <i class="fa fa-4x fa-diamond text-primary  mb-3 sr-icons"></i>
+                <h3 class="mb-3">{{ valores.titulo }}</h3>
+                <p class="text-faded mb-5">
+                  {{ valores.texto }}
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <div class="service-box mt-5 mx-auto">
+                <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+                <h3 class="mb-3">{{ missao.titulo }}</h3>
+                <p class="text-faded mb-5">
+                  {{ missao.texto }}
+                </p>
               </div>
             </div>
           </div>
-         </div>
         </div>
-    </section>
+      </section>
 
-    <section id="horarios">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 col-lg-12 text-center">
-            <h2 class="section-heading">Horários</h2>
-            <!-- <hr class="my-4"> -->
+      <section id="disciplinas">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">{{ disciplinas.titulo }}</h2>
+              <!-- <hr class="my-4"> -->
+            </div>
           </div>
         </div>
-
-        <div class="row ">
-          <div class="col-lg-4 col-sm-6 col-lg-12 mx-auto text-center">
-            <table class="table table-bordered ">
-              <thead>
-                <tr>
-                  <th scope="col" colspan="2">Manhã</th>
-                  <th scope="col" colspan="2">Manhã</th>
-                  <th scope="col" colspan="2">Tarde</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td colspan="2">Ensino Fundamental I</td>
-                  <td colspan="2">Ensino Fundamental II</td>
-                  <td colspan="2">Educação Infantil</td>
-                </tr>
-                <tr>
-                  <th scope="row" colspan="2">4º e 5º ano</th>
-                  <th scope="row" colspan="2">6º ao 9º ano</th>
-                  <th scope="row" colspan="2">Infantil ao 3º ano</th>
-                </tr>
-                <tr>
-                  <td>Entrada</td>
-                  <td>Saída</td>
-                  <td>Entrada</td>
-                  <td>Saída</td>
-                  <td>Entrada</td>
-                  <td>Saída</td>
-                </tr>
-                <tr>
-                  <th scope="row">07h30</th>
-                  <th scope="row">12h00</th>
-                  <th scope="row">07h00</th>
-                  <th scope="row">12h20</th>
-                  <th scope="row">13h00</th>
-                  <th scope="row">17h30</th>
-                </tr>
-              </tbody>
-            </table>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 text-left">
+              <div class="service-box mt-5 mx-auto">
+                <h6 class="mb-3">{{ infantil.titulo }}</h6>
+                <ul>
+                  <li v-for="materia in infantil.texto.split(',')" >
+                    {{ materia }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-left">
+              <div class="service-box mt-5 mx-auto">
+                <h6 class="mb-3">{{ fundamental.titulo }}</h6>
+                <ul>
+                  <li v-for="materia in fundamental.texto.split(',')" >
+                    {{ materia }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-left">
+              <div class="service-box mt-5 mx-auto">
+                <h6 class="mb-3">{{ fundamentalDois.titulo }}</h6>
+                <ul>
+                  <li v-for="materia in fundamentalDois.texto.split(',')" >
+                    {{ materia }}
+                  </li>
+                </ul>
+                </ul>
+              </div>
+            </div>
           </div>
-         </div>
+        </div>
+      </section>
 
-    </section>
+      <section id="projetos">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">{{ atividades.titulo }}</h2>
+              <!-- <hr class="my-4"> -->
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 text-left">
+              <div class="service-box mt-5 mx-auto">
+                <h6 class="mb-3">{{ atividadesUm.titulo }}</h6>
+                <ul>
+                  <li v-for="atividade in atividadesUm.texto.split(',')" >
+                    {{ atividade }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-left">
+              <div class="service-box mt-5 mx-auto">
+                <h6 class="mb-3">{{ atividadesDois.titulo }}</h6>
+                <ul>
+                  <li v-for="atividade in atividadesDois.texto.split(',')" >
+                    {{ atividade }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-left">
+              <div class="service-box mt-5 mx-auto">
+                <h6 class="mb-3">{{ atividadesTres.titulo }}</h6>
+                <ul>
+                  <li v-for="atividade in atividadesTres.texto.split(',')" >
+                    {{ atividade }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lazer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">{{ areaLazer.titulo }}</h2>
+              <hr class="my-4">
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="col-lg-12 mx-auto text-center">
+              <div class="col-lg-12 col-md-4 text-left">
+                <div class="service-box mt-5 mx-auto">
+                  <h6 class="mb-3"></h6>
+                    <ul>
+                      <li v-for="area in areaLazer.texto.split(',')" >
+                        {{ area }}
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+
+      <section id="recursos">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading">{{ recursos.titulo }}</h2>
+              <hr class="my-4">
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="col-lg-12 mx-auto text-center">
+              <div class="col-lg-12 col-md-4 text-left">
+                <div class="service-box mt-5 mx-auto">
+                  <h6 class="mb-3"></h6>
+                    <ul>
+                      <li v-for="recurso in recursos.texto.split(',')" >
+                        {{ recurso }}
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+
+      <section id="horarios">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-lg-12 text-center">
+              <h2 class="section-heading">Horários</h2>
+              <!-- <hr class="my-4"> -->
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="col-lg-4 col-sm-6 col-lg-12 mx-auto text-center">
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2">Manhã</th>
+                    <th scope="col" colspan="2">Manhã</th>
+                    <th scope="col" colspan="2">Tarde</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2">Ensino Fundamental I</td>
+                    <td colspan="2">Ensino Fundamental II</td>
+                    <td colspan="2">Educação Infantil</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="2">4º e 5º ano</th>
+                    <th scope="row" colspan="2">6º ao 9º ano</th>
+                    <th scope="row" colspan="2">Infantil ao 3º ano</th>
+                  </tr>
+                  <tr>
+                    <td>Entrada</td>
+                    <td>Saída</td>
+                    <td>Entrada</td>
+                    <td>Saída</td>
+                    <td>Entrada</td>
+                    <td>Saída</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">07h30</th>
+                    <th scope="row">12h00</th>
+                    <th scope="row">07h00</th>
+                    <th scope="row">12h20</th>
+                    <th scope="row">13h00</th>
+                    <th scope="row">17h30</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+      </section>
 
 <!--     <section id="equipe">
       <div class="container">
@@ -382,167 +382,167 @@
     </section> -->
 
 
-    <section style="background-color:#0B6EF7" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mx-auto text-center">
-            <h4 class="section-heading text-white">{{ metodologia.titulo }}</h4>
-            <p class="text-faded mb-2" style="text-align: justify">
-              {{ metodologia.texto }}
-            </p>
-            <p class="text-faded mb-2" style="text-align: justify">
-              {{ metodologiaP2.texto }}
-            </p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#page-top">Voltar para o topo</a>
+      <section style="background-color:#0B6EF7" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto text-center">
+              <h4 class="section-heading text-white">{{ metodologia.titulo }}</h4>
+              <p class="text-faded mb-2" style="text-align: justify">
+                {{ metodologia.texto }}
+              </p>
+              <p class="text-faded mb-2" style="text-align: justify">
+                {{ metodologiaP2.texto }}
+              </p>
+              <a class="btn btn-light btn-xl js-scroll-trigger" href="#page-top">Voltar para o topo</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div v-if="galeriaUmThumb.foto" class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" v-bind:href="galeriaUmFull.foto">
-              <img class="img-fluid" v-bind:src="galeriaUmThumb.foto" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    {{ galeriaUmThumb.titulo }}
-                  </div>
-                  <div class="project-name">
-                    {{ galeriaUmThumb.texto }}
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div v-if="galeriaDoisThumb.foto" class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" v-bind:href="galeriaDoisFull.foto">
-              <img class="img-fluid" v-bind:src="galeriaDoisThumb.foto" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    {{ galeriaDoisThumb.titulo }}
-                  </div>
-                  <div class="project-name">
-                    {{ galeriaDoisThumb.texto }}
+      <section class="p-0" id="portfolio">
+        <div class="container-fluid p-0">
+          <div class="row no-gutters popup-gallery">
+            <div v-if="galeriaUmThumb.foto" class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" v-bind:href="galeriaUmFull.foto">
+                <img class="img-fluid" v-bind:src="galeriaUmThumb.foto" alt="">
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      {{ galeriaUmThumb.titulo }}
+                    </div>
+                    <div class="project-name">
+                      {{ galeriaUmThumb.texto }}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div v-if="galeriaTresThumb.foto" class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" v-bind:href="galeriaTresFull.foto">
-              <img class="img-fluid" v-bind:src="galeriaTresThumb.foto" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    {{ galeriaTresThumb.titulo }}
-                  </div>
-                  <div class="project-name">
-                    {{ galeriaTresThumb.texto }}
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div v-if="galeriaQuatroThumb.foto" class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" v-bind:href="galeriaQuatroFull.foto">
-              <img class="img-fluid" v-bind:src="galeriaQuatroThumb.foto" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    {{ galeriaQuatroThumb.titulo }}
-                  </div>
-                  <div class="project-name">
-                    {{ galeriaQuatroThumb.texto }}
+              </a>
+            </div>
+            <div v-if="galeriaDoisThumb.foto" class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" v-bind:href="galeriaDoisFull.foto">
+                <img class="img-fluid" v-bind:src="galeriaDoisThumb.foto" alt="">
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      {{ galeriaDoisThumb.titulo }}
+                    </div>
+                    <div class="project-name">
+                      {{ galeriaDoisThumb.texto }}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div v-if="galeriaCincoThumb.foto" class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" v-bind:href="galeriaCincoFull.foto">
-              <img class="img-fluid" v-bind:src="galeriaCincoThumb.foto" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    {{ galeriaCincoThumb.titulo }}
-                  </div>
-                  <div class="project-name">
-                    {{ galeriaCincoThumb.texto }}
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div v-if="galeriaSeisThumb.foto" class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" v-bind:href="galeriaSeisFull.foto">
-              <img class="img-fluid" v-bind:src="galeriaSeisThumb.foto" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    {{ galeriaSeisThumb.titulo }}
-                  </div>
-                  <div class="project-name">
-                    {{ galeriaSeisThumb.texto }}
+              </a>
+            </div>
+            <div v-if="galeriaTresThumb.foto" class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" v-bind:href="galeriaTresFull.foto">
+                <img class="img-fluid" v-bind:src="galeriaTresThumb.foto" alt="">
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      {{ galeriaTresThumb.titulo }}
+                    </div>
+                    <div class="project-name">
+                      {{ galeriaTresThumb.texto }}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div v-if="galeriaQuatroThumb.foto" class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" v-bind:href="galeriaQuatroFull.foto">
+                <img class="img-fluid" v-bind:src="galeriaQuatroThumb.foto" alt="">
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      {{ galeriaQuatroThumb.titulo }}
+                    </div>
+                    <div class="project-name">
+                      {{ galeriaQuatroThumb.texto }}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div v-if="galeriaCincoThumb.foto" class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" v-bind:href="galeriaCincoFull.foto">
+                <img class="img-fluid" v-bind:src="galeriaCincoThumb.foto" alt="">
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      {{ galeriaCincoThumb.titulo }}
+                    </div>
+                    <div class="project-name">
+                      {{ galeriaCincoThumb.texto }}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div v-if="galeriaSeisThumb.foto" class="col-lg-4 col-sm-6">
+              <a class="portfolio-box" v-bind:href="galeriaSeisFull.foto">
+                <img class="img-fluid" v-bind:src="galeriaSeisThumb.foto" alt="">
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      {{ galeriaSeisThumb.titulo }}
+                    </div>
+                    <div class="project-name">
+                      {{ galeriaSeisThumb.texto }}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">São José dos Campos - SP</h2>
-            <hr class="my-4" >
-            <p class="mb-5">Endereço: Avenida Rui Barbosa, 1868 - Vila Bela Vista, 12200-000</p>
+      <section id="contact">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+              <h2 class="section-heading">São José dos Campos - SP</h2>
+              <hr class="my-4" >
+              <p class="mb-5">Endereço: Avenida Rui Barbosa, 1868 - Vila Bela Vista, 12200-000</p>
+            </div>
           </div>
+          <div class="row">
+            <div v-if="whatsapp.link" class="col-lg-4 ml-auto text-center">
+              <p>
+                <i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i>
+                <a href="whatsapp.link">{{ whatsapp.titulo}}</a>
+              </p>
+              <p>{{ telefone.titulo}}</p>
+            </div>
+            <div class="col-lg-4 mr-auto text-center">
+              <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+              <p>
+                <a href="mailto:email.titulo">{{ email.titulo }}</a>
+              </p>
+            </div>
+            <div class="col-lg-4 mr-auto text-center">
+              <i class="fa fa-facebook fa-3x mb-3 sr-contact"></i>
+              <p>
+                <a v-bind:href="facebook.link">{{ facebook.link }}</a>
+              </p>
+            </div>
+          </div>
+              <a class="btn btn-light btn-xl js-scroll-trigger" style="background-color: #0B6EF7" href="#page-top"><font color="white"> Voltar para o topo</font></a>
         </div>
-        <div class="row">
-          <div v-if="whatsapp.link" class="col-lg-4 ml-auto text-center">
-            <p>
-              <i class="fa fa-whatsapp fa-3 mb-3 sr-contact"></i>
-               <a href="whatsapp.link">{{ whatsapp.titulo}}</a>
-             </p>
-            <p>{{ telefone.titulo}}</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:email.titulo">{{ email.titulo }}</a>
-            </p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-facebook fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a v-bind:href="facebook.link">{{ facebook.link }}</a>
-            </p>
-          </div>
+      </section>
+    </div>
+      <!-- VENUE -->
+      Lat -23.16285976 Long ; -45.89501446
+      <section id="venue">
+        <div class="row min-h-10">
+          <div id="map-canvas"></div>
+            <div class="row desktop-12 container">
+                <div class="venue row">
+                    
+                </div>
+            </div>
         </div>
-            <a class="btn btn-light btn-xl js-scroll-trigger" style="background-color: #0B6EF7" href="#page-top"><font color="white"> Voltar para o topo</font></a>
-      </div>
-    </section>
-
-    <!-- VENUE -->
-    <!-- Lat -23.16285976 Long ; -45.89501446
-    <section id="venue">
-      <div class="row min-h-10">
-        <div id="map-canvas"></div>
-          <div class="row desktop-12 container">
-              <div class="venue row">
-                  
-              </div>
-          </div>
-      </div>
-    </section> -->
-  </div>
+      </section>
+    
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -554,173 +554,180 @@
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
 
-        <!-- VUE.JS -->
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <script type="text/javascript">
-          var app = new Vue({
-            el: "#app",
-            async mounted() {
-              this.elements = await fetch("https://smartiscool.online/sites/api/conteudo/1/").then(
-                function (response) {
-                  return response.json();
-                }
-              );
-              this.whatsapp = this.elements.filter(function (elements) {
-                  return elements.chave == "whatsapp";
-              })[0];
-              this.facebook = this.elements.filter(function (elements) {
-                return elements.chave == "facebook";
-              })[0];
-              this.telefone = this.elements.filter(function (elements) {
-                return elements.chave == "telefone";
-              })[0];
-              this.series = this.elements.filter(function (elements) {
-                return elements.chave == "series";
-              })[0];
-              this.primeiraSecao = this.elements.filter(function (elements) {
-                return elements.chave == "primeira";
-              })[0];
-              this.visao = this.elements.filter(function (elements) {
-                return elements.chave == "visao";
-              })[0];
-              this.valores = this.elements.filter(function (elements) {
-                return elements.chave == "valores";
-              })[0];
-              this.missao = this.elements.filter(function (elements) {
-                return elements.chave == "missao";
-              })[0];
-              this.disciplinas = this.elements.filter(function (elements) {
-                return elements.chave == "disciplinas";
-              })[0];
-              this.infantil = this.elements.filter(function (elements) {
-                return elements.chave == "infantil";
-              })[0];
-              this.fundamental = this.elements.filter(function (elements) {
-                return elements.chave == "fundamental";
-              })[0];
-              this.fundamentalDois = this.elements.filter(function (elements) {
-                return elements.chave == "fundamental_dois";
-              })[0];
-              this.atividades = this.elements.filter(function (elements) {
-                return elements.chave == "atividades";
-              })[0];
-              this.atividadesUm = this.elements.filter(function (elements) {
-                return elements.chave == "atividadesUm";
-              })[0];
-              this.atividadesDois = this.elements.filter(function (elements) {
-                return elements.chave == "atividadesDois";
-              })[0];
-              this.atividadesTres = this.elements.filter(function (elements) {
-                return elements.chave == "atividadesTres";
-              })[0];
-              this.areaLazer = this.elements.filter(function (elements) {
-                return elements.chave == "areaLazer";
-              })[0];
-              this.recursos = this.elements.filter(function (elements) {
-                return elements.chave == "recursos";
-              })[0];
-              this.metodologia = this.elements.filter(function (elements) {
-                return elements.chave == "metodologiaP1";
-              })[0];
-              this.metodologiaP2 = this.elements.filter(function (elements) {
-                return elements.chave == "metodologiaP2";
-              })[0];
-              this.galeria = this.elements.filter(function (elements) {
-                return elements.chave == "galeria";
-              })[0];
-              this.galeriaUmThumb = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaUmThumb";
-              })[0];
-              this.galeriaUmFull = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaUmFull";
-              })[0];
-              this.galeriaDoisThumb = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaDoisThumb";
-              })[0];
-              this.galeriaDoisFull = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaDoisFull";
-              })[0];
-              this.galeriaTresThumb = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaTresThumb";
-              })[0];
-              this.galeriaTresFull = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaTresFull";
-              })[0];
-              this.galeriaQuatroThumb = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaQuatroThumb";
-              })[0];
-              this.galeriaQuatroFull = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaQuatroFull";
-              })[0];
-              this.galeriaCincoThumb = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaCincoThumb";
-              })[0];
-              this.galeriaCincoFull = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaCincoFull";
-              })[0];
-              this.galeriaSeisThumb = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaSeisThumb";
-              })[0];
-              this.galeriaSeisFull = this.elements.filter(function (elements) {
-                return elements.chave == "galeriaSeisFull";
-              })[0];
-              this.contatos = this.elements.filter(function (elements) {
-                return elements.chave == "contatos";
-              })[0];
-              this.endereco = this.elements.filter(function (elements) {
-                return elements.chave == "endereco";
-              })[0];
-              this.email = this.elements.filter(function (elements) {
-                return elements.chave == "email";
-              })[0];
-              this.facebook = this.elements.filter(function (elements) {
-                return elements.chave == "facebook";
-              })[0];
-            },
-            data() {
-              return {
-                elements: [],
-                whatsapp: {},
-                facebook: {},
-                telefone: {},
-                series: {},
-                primeiraSecao: {},
-                visao: {},
-                valores: {},
-                missao: {},
-                disciplinas: {},
-                infantil: {},
-                fundamental: {},
-                fundamentalDois: {},
-                atividades: {},
-                atividadesUm: {},
-                atividadesDois: {},
-                atividadesTres: {},
-                areaLazer: {},
-                recursos: {},
-                metodologia: {},
-                metodologiaP2: {},
-                galeria: {},
-                galeriaUmThumb: {},
-                galeriaUmFull: {},
-                galeriaDoisThumb: {},
-                galeriaDoisFull: {},
-                galeriaTresThumb: {},
-                galeriaTresFull: {},
-                galeriaQuatroThumb: {},
-                galeriaQuatroFull: {},
-                galeriaCincoThumb: {},
-                galeriaCincoFull: {},
-                galeriaSeisThumb: {},
-                galeriaSeisFull: {},
-                contatos: {},
-                endereco: {},
-                email: {},
-                facebook: {},
-              };
-            },
-          });
-        </script>
+    <!-- VUE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+
+      var app = new Vue({
+        el: "#app",
+        async mounted() {
+          this.elements = await fetch("https://smartiscool.online/sites/api/conteudo/1/").then(
+            function (response) {
+              return response.json();
+            }
+          );
+          this.whatsapp = this.elements.filter(function (elements) {
+              return elements.chave == "whatsapp";
+          })[0];
+          this.facebook = this.elements.filter(function (elements) {
+            return elements.chave == "facebook";
+          })[0];
+          this.telefone = this.elements.filter(function (elements) {
+            return elements.chave == "telefone";
+          })[0];
+          this.series = this.elements.filter(function (elements) {
+            return elements.chave == "series";
+          })[0];
+          this.primeiraSecao = this.elements.filter(function (elements) {
+            return elements.chave == "primeira";
+          })[0];
+          this.visao = this.elements.filter(function (elements) {
+            return elements.chave == "visao";
+          })[0];
+          this.valores = this.elements.filter(function (elements) {
+            return elements.chave == "valores";
+          })[0];
+          this.missao = this.elements.filter(function (elements) {
+            return elements.chave == "missao";
+          })[0];
+          this.disciplinas = this.elements.filter(function (elements) {
+            return elements.chave == "disciplinas";
+          })[0];
+          this.infantil = this.elements.filter(function (elements) {
+            return elements.chave == "infantil";
+          })[0];
+          this.fundamental = this.elements.filter(function (elements) {
+            return elements.chave == "fundamental";
+          })[0];
+          this.fundamentalDois = this.elements.filter(function (elements) {
+            return elements.chave == "fundamental_dois";
+          })[0];
+          this.atividades = this.elements.filter(function (elements) {
+            return elements.chave == "atividades";
+          })[0];
+          this.atividadesUm = this.elements.filter(function (elements) {
+            return elements.chave == "atividadesUm";
+          })[0];
+          this.atividadesDois = this.elements.filter(function (elements) {
+            return elements.chave == "atividadesDois";
+          })[0];
+          this.atividadesTres = this.elements.filter(function (elements) {
+            return elements.chave == "atividadesTres";
+          })[0];
+          this.areaLazer = this.elements.filter(function (elements) {
+            return elements.chave == "areaLazer";
+          })[0];
+          this.recursos = this.elements.filter(function (elements) {
+            return elements.chave == "recursos";
+          })[0];
+          this.metodologia = this.elements.filter(function (elements) {
+            return elements.chave == "metodologiaP1";
+          })[0];
+          this.metodologiaP2 = this.elements.filter(function (elements) {
+            return elements.chave == "metodologiaP2";
+          })[0];
+          this.galeria = this.elements.filter(function (elements) {
+            return elements.chave == "galeria";
+          })[0];
+          this.galeriaUmThumb = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaUmThumb";
+          })[0];
+          this.galeriaUmFull = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaUmFull";
+          })[0];
+          this.galeriaDoisThumb = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaDoisThumb";
+          })[0];
+          this.galeriaDoisFull = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaDoisFull";
+          })[0];
+          this.galeriaTresThumb = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaTresThumb";
+          })[0];
+          this.galeriaTresFull = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaTresFull";
+          })[0];
+          this.galeriaQuatroThumb = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaQuatroThumb";
+          })[0];
+          this.galeriaQuatroFull = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaQuatroFull";
+          })[0];
+          this.galeriaCincoThumb = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaCincoThumb";
+          })[0];
+          this.galeriaCincoFull = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaCincoFull";
+          })[0];
+          this.galeriaSeisThumb = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaSeisThumb";
+          })[0];
+          this.galeriaSeisFull = this.elements.filter(function (elements) {
+            return elements.chave == "galeriaSeisFull";
+          })[0];
+          this.contatos = this.elements.filter(function (elements) {
+            return elements.chave == "contatos";
+          })[0];
+          this.endereco = this.elements.filter(function (elements) {
+            return elements.chave == "endereco";
+          })[0];
+          this.email = this.elements.filter(function (elements) {
+            return elements.chave == "email";
+          })[0];
+          this.facebook = this.elements.filter(function (elements) {
+            return elements.chave == "facebook";
+          })[0];
+        },
+        data() {
+          return {
+            elements: [],
+            whatsapp: {},
+            facebook: {},
+            telefone: {},
+            series: {},
+            primeiraSecao: {},
+            visao: {},
+            valores: {},
+            missao: {},
+            disciplinas: {},
+            infantil: {},
+            fundamental: {},
+            fundamentalDois: {},
+            atividades: {},
+            atividadesUm: {},
+            atividadesDois: {},
+            atividadesTres: {},
+            areaLazer: {},
+            recursos: {},
+            metodologia: {},
+            metodologiaP2: {},
+            galeria: {},
+            galeriaUmThumb: {},
+            galeriaUmFull: {},
+            galeriaDoisThumb: {},
+            galeriaDoisFull: {},
+            galeriaTresThumb: {},
+            galeriaTresFull: {},
+            galeriaQuatroThumb: {},
+            galeriaQuatroFull: {},
+            galeriaCincoThumb: {},
+            galeriaCincoFull: {},
+            galeriaSeisThumb: {},
+            galeriaSeisFull: {},
+            contatos: {},
+            endereco: {},
+            email: {},
+            facebook: {},
+          };
+        },
+      });
+      window.localStorage.setItem('menu', 'Bla');
+
+      var navMenu = new Vue({
+        el: "#navMenu",
+        data: app
+      });
+    </script>
      
   </body>
 
