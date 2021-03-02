@@ -66,7 +66,7 @@
                   </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" v-bind:href="whatsapp.link"><font color='#0B6EF7'>{{ whatsapp.titulo}} WhatsApp</font> </a>
+                <a class="nav-link js-scroll-trigger" v-bind:href="whatsLink"><font color='#0B6EF7'>{{ whatsapp.titulo}} WhatsApp</font> </a>
              </li>
              <li class="nav-item">
                <a class="nav-link js-scroll-trigger" href=""><font color='#0B6EF7'>{{ telefone.titulo}}</font></a>
@@ -581,6 +581,7 @@
           this.whatsapp = this.elements.filter(function (elements) {
               return elements.chave == "whatsapp";
           })[0];
+          this.whatsLink = "https://web.whatsapp.com/send?phone=+55.12" + this.whatsapp.titulo.substring(4);
           this.facebook = this.elements.filter(function (elements) {
             return elements.chave == "facebook";
           })[0];
@@ -694,6 +695,7 @@
           return {
             elements: [],
             whatsapp: {},
+            whatsLink: {},
             facebook: {},
             telefone: {},
             series: {},
